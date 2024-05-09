@@ -1,0 +1,71 @@
+{
+    "luaSnippet": {
+        "prefix": "print",
+        "body": [
+            "print(\"${1:Your Output here}\")"
+        ],
+        "description": "Prints a message to the output console"
+    },
+    "Wait for Seconds": {
+        "prefix": "wait",
+        "body": [
+            "wait(${1:Seconds})"
+        ],
+        "description": "Waits for a specified number of seconds"
+    },
+    "Print Statement": {
+        "prefix": "print",
+        "body": [
+            "print(\"${1:Hello, world!}\")"
+        ],
+        "description": "Prints a message to the output console"
+    },
+    "Player Touched Event": {
+        "prefix": "touched",
+        "body": [
+            "script.Parent.Touched:Connect(function(hit)",
+            "\t-- Your code here",
+            "end)"
+        ],
+        "description": "Handles player touching a part"
+    },
+    "Change Color of Part": {
+        "prefix": "color",
+        "body": [
+            "script.Parent.Color = Color3.fromRGB(${1:R}, ${2:G}, ${3:B})"
+        ],
+        "description": "Changes the color of a part"
+    },
+    "Teleport Player to Position": {
+        "prefix": "teleport",
+        "body": [
+            "game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(${1:X}, ${2:Y}, ${3:Z}))"
+        ],
+        "description": "Teleports the player to a specified position"
+    },
+    "Create a New Part": {
+        "prefix": "newpart",
+        "body": [
+            "local part = Instance.new(\"Part\")",
+            "part.Parent = workspace",
+            "part.Position = Vector3.new(${1:X}, ${2:Y}, ${3:Z})",
+            "-- Add more properties as needed",
+            "return part"
+        ],
+        "description": "Creates a new part at a specified position"
+    },
+    "Check if Player is Admin": {
+        "prefix": "isadmin",
+        "body": [
+            "local isAdmin = game.Players.LocalPlayer.UserId == ${1:AdminUserID}",
+            "-- Replace AdminUserID with the actual user ID of the admin",
+            "if isAdmin then",
+            "\t-- Player is admin, execute admin-specific code here",
+            "else",
+            "\t-- Player is not admin, execute non-admin code here",
+            "end"
+        ],
+        "description": "Checks if the player is admin"
+    }
+}
+

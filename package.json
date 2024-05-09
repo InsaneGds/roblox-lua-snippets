@@ -1,0 +1,24 @@
+{
+  "name": "roblox-lua-snippets",
+  "displayName": "Roblox LUA Snippets",
+  "author": "Declan Cruise",
+  "publisher": "DeclanCruise",
+  "description": "Easily import pre-made LUA snippets usable for Roblox Studio!",
+  "version": "0.1.4",
+  "repository": "https://github.com/InsaneGds/roblox-lua-snippets",
+  "icon": "icons/appicon.png",
+  "engines": {
+    "vscode": "1.89.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
