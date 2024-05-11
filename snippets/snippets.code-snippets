@@ -66,6 +66,64 @@
             "end"
         ],
         "description": "Checks if the player is admin"
+    },
+    "Give Avatar Items": {
+        "prefix": "giveavataritems",
+        "body": [
+            "-- Lua script to give avatar items to a user in Roblox",
+            "local Players = game:GetService(\"Players\")",
+            "",
+            "-- Function to give avatar items to a player",
+            "local function GiveAvatarItems(player)",
+            "    -- Put the asset IDs of the items you want to give here",
+            "    local itemIDs = {",
+            "        ${1:itemId}, -- Replace with the actual asset IDs of the items",
+            "        ${2:itemId}, -- Replace with the actual asset IDs of the items",
+            "        -- Add more item IDs as needed",
+            "    }",
+            "",
+            "    -- Loop through the item IDs and give them to the player",
+            "    for _, itemID in ipairs(itemIDs) do",
+            "        -- Check if the item exists",
+            "        local success, item = pcall(function()",
+            "            return game:GetService(\"MarketplaceService\"):GetProductInfo(itemID)",
+            "        end)",
+            "        ",
+            "        if success then",
+            "            -- Give the item to the player",
+            "            player.CharacterAppearance = itemID",
+            "            print(\"Gave item with ID:\", itemID, \"to player:\", player.Name)",
+            "        else",
+            "            warn(\"Failed to give item with ID:\", itemID, \"to player:\", player.Name)",
+            "        end",
+            "    end",
+            "end",
+            "",
+            "-- Give items to all players when the script is executed",
+            "for _, player in ipairs(Players:GetPlayers()) do",
+            "    GiveAvatarItems(player)",
+            "end",
+            "",
+            "-- Give items to players who join after the script is executed",
+            "Players.PlayerAdded:Connect(GiveAvatarItems)"
+        ],
+        "description": "Lua script to give avatar items to a user in Roblox"
+    },
+    "Kick Player": {
+        "prefix": "kickplayer",
+        "body": [
+            "-- Lua script to kick a player from the game",
+            "local playerToKick = game.Players:FindFirstChild(\"${1:PlayerNameHere}\")",
+            "",
+            "-- Check if the player exists",
+            "if playerToKick then",
+            "\t-- Kick the player with a custom message",
+            "\tplayerToKick:Kick(\"Your message here\")",
+            "else",
+            "\t-- If the player doesn't exist, print an error message",
+            "\tprint(\"Player not found!\")",
+            "end"
+        ],
+        "description": "Kicks a player from the game"
     }
 }
-

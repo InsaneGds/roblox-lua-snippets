@@ -23,6 +23,8 @@ Easily import basic LUA snippets for Roblox Studio into Visual Studio Code!
 - **Teleport Player to Position**: `teleport`
 - **Create a New Part**: `newpart`
 - **Check if Player is Admin**: `isadmin`
+- **Gives avatar items**: `giveavataritems`
+- **Kick Player from the game** : `kickplayer` 
   
 ...and more!
 

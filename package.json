@@ -4,11 +4,11 @@
   "author": "Declan Cruise",
   "publisher": "DeclanCruise",
   "description": "Easily import pre-made LUA snippets usable for Roblox Studio!",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "repository": "https://github.com/InsaneGds/roblox-lua-snippets",
   "icon": "icons/appicon.png",
   "engines": {
-    "vscode": "1.89.0"
+    "vscode": "1.89.1"
   },
   "categories": [
     "Snippets"
