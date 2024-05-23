@@ -25,6 +25,7 @@ Easily import basic LUA snippets for Roblox Studio into Visual Studio Code!
 - **Check if Player is Admin**: `isadmin`
 - **Gives avatar items**: `giveavataritems`
 - **Kick Player from the game** : `kickplayer` 
+- **Makes a model visible or invisible** : `changeVisibility` 
   
 ...and more!
 
@@ -32,6 +33,10 @@ Easily import basic LUA snippets for Roblox Studio into Visual Studio Code!
 
 If you have any suggestions, bug reports, or feature requests, please don't hesitate to [open an issue](https://github.com/InsaneGds/roblox-lua-snippets/issues) on GitHub.
 
+## Contribution
+
+If you want to contribute, please read `CONTRIBUTE.md` for more information.
+
 ## License
 
-This extension is licensed under the [GNU license](https://www.gnu.org/licenses/gpl-3.0.html).
+**This project is licensed under the [GNU license](https://www.gnu.org/licenses/gpl-3.0.html).**

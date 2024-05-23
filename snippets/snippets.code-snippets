@@ -79,7 +79,7 @@
             "    local itemIDs = {",
             "        ${1:itemId}, -- Replace with the actual asset IDs of the items",
             "        ${2:itemId}, -- Replace with the actual asset IDs of the items",
-            "        -- Add more item IDs as needed",
+            "        -- You can dd more item IDs as needed",
             "    }",
             "",
             "    -- Loop through the item IDs and give them to the player",
@@ -125,5 +125,14 @@
             "end"
         ],
         "description": "Kicks a player from the game"
+    },
+    "Change Part Visibility": {
+        "prefix": "visibility",
+        "body": [
+            "script.Parent.Transparency = ${1:0.5}",
+            "script.Parent.CanCollide = ${2:false}",
+            "-- You can reverse the process or edit the transparency values as needed"
+        ],
+        "description": "Changes the visibility of a part"
     }
 }

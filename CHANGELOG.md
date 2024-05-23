@@ -1,5 +1,11 @@
 # Changelog
 
+### [0.1.8] - 23/05/2024
+- **Fixed 3 bugs with scripts not being processed correctly**
+- **Added one more snippet, `visibility`**
+- ***Contributions are now allowed! See `CONTRIBUTE.md` for more info!***
+
+
 
 ### [0.1.6] - 11/05/2024
 - **Fixed VSCode crashing on MacOS and Linux**

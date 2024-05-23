@@ -4,7 +4,7 @@
   "author": "Declan Cruise",
   "publisher": "DeclanCruise",
   "description": "Easily import pre-made LUA snippets usable for Roblox Studio!",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "repository": "https://github.com/InsaneGds/roblox-lua-snippets",
   "icon": "icons/appicon.png",
   "engines": {
